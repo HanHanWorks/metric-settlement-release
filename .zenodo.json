@@ -1,0 +1,37 @@
+{
+  "title": "Who bears the cost of forecast error? code and data release",
+  "upload_type": "software",
+  "description": "<p>Code and derived data release for the manuscript <i>Who bears the cost of forecast error? Performance metrics as regulation in China's wind and solar settlement</i>.</p><p>The study uses three years of settled day-ahead schedules from a southern Chinese provincial grid (2023, 2024, and a partial 2025) to compare two official accuracy formulas that differ only in their denominator: the national capacity-normalised index and the regional index with realised output floored at 20% of capacity. On the 2024 analysis sample of 15,191 farm-days, the regional score-minimising report lies 27-30% below the mean, identical forecasts score 62 regionally and 88 nationally, and the 20.5-point provincial-plant gap decomposes into 3.0 points of capacity weighting, 31.0 of error cancellation and -13.6 from the denominator. Under the existing thresholds, a reference-curve denominator shifts compliance from 60.5% to 49.8%; a common recalibrated threshold of 53.4 restores the aggregate pass rate.</p><p>The archive contains the analysis code, derived farm-day panels, result tables and figures. The raw 15-minute metered output and settled schedules are confidential and are not included; no de-identified sample is available. Code is released under MIT; derived tables and figures under CC BY 4.0.</p>",
+  "creators": [
+    {
+      "name": "Huang, Zihao",
+      "affiliation": "Guangxi Key Laboratory of Digital Infrastructure, Guangxi Zhuang Autonomous Region Information Center; School of Computer and Electronic Information, Guangxi University"
+    },
+    {
+      "name": "Chen, Yan",
+      "affiliation": "Guangxi Key Laboratory of Digital Infrastructure, Guangxi Zhuang Autonomous Region Information Center; School of Computer and Electronic Information, Guangxi University"
+    }
+  ],
+  "license": "mit",
+  "access_right": "open",
+  "language": "eng",
+  "version": "1.0.0",
+  "publication_date": "2026-11-01",
+  "keywords": [
+    "renewable energy policy",
+    "forecast accuracy",
+    "performance assessment",
+    "settlement rules",
+    "regulatory incentives",
+    "distributional effects",
+    "wind and solar power",
+    "China"
+  ],
+  "related_identifiers": [
+    {
+      "relation": "isIdenticalTo",
+      "identifier": "https://github.com/HanHanWorks/metric-settlement-release",
+      "scheme": "url"
+    }
+  ]
+}

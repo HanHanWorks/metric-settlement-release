@@ -1,0 +1,4 @@
+﻿year,n_farmdays_raw,n_farmdays,n_farms,n_days,shrink_median,shrink_mean,tax_median,tax_mean,floor_bind_median,floor_bind_mean,b_obs_median,rmse_over_cap_median,shrink_median_W,tax_median_W,acc_flo_mean_W,n_farmdays_W,shrink_median_S,tax_median_S,acc_flo_mean_S,n_farmdays_S,acc_flo_mean,acc_cap_mean,gap_formula_points
+2023,11190,10624,40,365,-0.2656,-0.3135,3.0182,10.2805,0.7396,0.7056,1.025,0.0955,-0.1836,2.0587,56.808,4779,-0.4258,4.2178,70.202,5845,64.18,89.15,24.97
+2024,15968,15191,48,366,-0.2919,-0.3172,3.5848,9.333,0.7292,0.6957,1.0361,0.1014,-0.1943,2.6592,55.283,6827,-0.4365,4.6353,68.361,8364,62.48,88.33,25.84
+2025,8225,8016,50,175,-0.3041,-0.3173,4.3955,9.2927,0.7188,0.6655,1.0119,0.1146,-0.2474,4.8676,53.107,4061,-0.4005,3.9055,64.662,3955,58.81,87.21,28.4

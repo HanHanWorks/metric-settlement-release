@@ -1,0 +1,6 @@
+﻿step,label,value,cumulative,kind
+0,station mean,62.09,62.09,level
+1,capacity weighting,3.04,65.13,delta
+2,error cancellation,31.02,96.15,delta
+3,normalizer,-13.6,82.55,delta
+4,provincial score,82.55,82.55,level

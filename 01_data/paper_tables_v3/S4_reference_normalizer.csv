@@ -1,0 +1,9 @@
+﻿kind,group,n_farmdays,n_farms,acc_old_mean,acc_new_mean,score_drift_median,compliance_old,compliance_new,spearman_old_new,shrink_new_max_abs,theta_calibrated,compliance_new_calibrated,note
+ALL,overall,15191,48,62.48,56.51,-2.74,0.605,0.498,0.585,0.0,53.4,0.605,旧阈值反事实：W>=60 / S>=65
+W,overall,6827,24,55.28,53.0,0.0,0.49,0.503,0.555,0.0,53.4,0.574,旧阈值 60
+S,overall,8364,24,68.36,59.37,-5.57,0.699,0.495,0.628,0.0,53.4,0.63,旧阈值 65
+cap_small,capacity_tertile,5200,16,59.35,51.68,-5.76,0.562,0.411,0.518,0.0,53.4,0.526,"small tertile, farm-level cap cut q1=73.4 q2=120.3 MW"
+cap_mid,capacity_tertile,4943,16,60.86,49.85,-6.17,0.573,0.424,0.605,0.0,53.4,0.538,"mid tertile, farm-level cap cut q1=73.4 q2=120.3 MW"
+cap_large,capacity_tertile,5048,16,67.31,68.0,-0.0,0.682,0.661,0.586,0.0,53.4,0.752,"large tertile, farm-level cap cut q1=73.4 q2=120.3 MW"
+new_farm_2024,new_farm,1314,8,66.59,89.73,20.12,0.68,0.976,0.856,0.0,53.4,0.985,2024 出现 / 2023 未出现的 9 个 farm（其中 1 个在 cf 过滤后无样本）
+fallback_capacity_norm,fallback,3693,24,65.24,89.71,20.89,0.651,0.993,0.885,0.0,53.4,0.998,acc_new == acc_cap（<1e-6），无 prior-year reference 时回退容量分母

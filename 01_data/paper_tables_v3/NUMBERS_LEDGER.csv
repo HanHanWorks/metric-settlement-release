@@ -1,0 +1,34 @@
+﻿number_id,value,unit,used_in,source,note
+abstract_tilt,-0.27 ~ -0.30,fraction,Abstract; §I; Fig.2,S1_headline.csv:shrink_median,三年中位 −0.266/−0.292/−0.304，摘要写 27–30%
+abstract_weight_time,14%,share of intervals,Abstract; §IV-A,S2_weight_share.csv,风电 PM≥0.5Cap 的时间占比 14.3%
+abstract_weight_score,3%,share of weight,Abstract; §IV-A,S2_weight_share.csv,风电 PM≥0.5Cap 的权重占比 3.0%
+abstract_score_floored,62,points,Abstract; §III,S1_headline.csv:acc_flo_mean,2024 = 62.07
+abstract_score_capacity,88,points,Abstract; §III,S1_headline.csv:acc_cap_mean,2024 = 88.33
+ci_weight,+3.0,points,Abstract; Fig.3a; Table II,T2_decomposition.csv:weight,2024 ALL
+ci_cancel,+31.0,points,Abstract; Fig.3a; Table II,T2_decomposition.csv:A,2024 ALL
+ci_normalizer,-13.6,points,Abstract; Fig.3a; Table II,T2_decomposition.csv:B,2024 ALL；三年 −10.98/−13.60/−15.65
+understatement,44%,ratio,Abstract; §IV-B,T2_decomposition.csv,13.60/31.02
+delta_median,-0.110,dimensionless,Fig.2c; Table III; §IV-C,T3_behavior.csv:delta_median,"median of Δ（n=15,176，已剔 cf<=0.005）；不是中位数之差"
+delta_mean_ci,"[-0.196, -0.178]",dimensionless,Table III,T3_behavior.csv,"Δ 均值的日聚类 bootstrap CI（2,000 次按 day 重采样）"
+placebo,0.0000 (median),dimensionless,Fig.2c; Table III,T3_behavior.csv:delta_plc_mean,"站内置换分母后的 Δ：中位 0.0000，均值 0.0002，CI [0.00002, 0.0003]"
+gain_pts,5.4,points,§IV-C,T3_behavior.csv:gain_pts_median,偏离最优的收益中位（wind 5.1 / solar 5.7）
+bstar_n,"15,176",farm-days,Table III; Fig.2d,T3_behavior.csv:n_farmdays,"b* raw 15,524 → 剔 348 个低出力日 → 15,176（wind 6,827 / solar 8,349）"
+bstar_medians,1.036 / 0.877 / -0.110,dimensionless,Table III; Fig.2d,T3_behavior.csv,b_cap / b_flo / Δ 中位；Δ<0 占 87.1%
+delta_negative_share,87.1%,share,Fig.2d; Table III,T3_behavior.csv:share_delta_negative,Δ<0 的场站-日占比（旧口径 85.9%）
+en_rho,0.61,Spearman,§V-C,S4_reference_normalizer.csv,参考曲线改法下新旧分数的秩相关
+en_compliance,60.5% -> 49.8%,share,§V-C; Fig.3d,S4_reference_normalizer.csv,"旧阈值下：光伏 69.9%→49.5%，风电 49.0%→50.3%（n=15,191）"
+theta_calibrated,53.4,points,§V-C; Fig.3d,S4_reference_normalizer.csv:theta_calibrated,公共新阈值，0–100 按 0.1 扫描，使新分母总体合规率=旧分母 60.5%
+calibrated_compliance,60.5 / 57.4 / 63.0,percent,§V-C; Fig.3d,S4_reference_normalizer.csv:compliance_new_calibrated,θ*=53.4 下的 all / wind / solar 合规率
+calibrated_tertiles,52.6 / 53.8 / 75.2,percent,§V-C,S4_reference_normalizer.csv:cap_small/mid/large,"farm 级容量三分位（q1=73.4, q2=120.3 MW）在 θ*=53.4 下的合规率"
+new_farm_proxy,68.0 -> 97.6 -> 98.5,percent,§V-C,S4_reference_normalizer.csv:new_farm_2024,"9 个 2024 新增 farm_id；1 个在 cf 过滤后为空 → 8 个 farm / 1,314 场站-日"
+fallback_proxy,65.1 -> 99.3 -> 99.8,percent,§V-C,S4_reference_normalizer.csv:fallback_capacity_norm,"acc_new==acc_cap（3,693 场站-日，24.3%）：旧阈值 / 旧θ新分母 / 校准θ"
+alt_treatment,62.07 / 88.45 / -0.280,points; fraction,§V-D robustness,em_farmday_2024_full.csv,"保留 zero-output+低出力日（n=15,968）：acc_flo/acc_cap 均值与 tilt 中位；主样本 62.48/88.33/-0.292"
+alpha_national_zero,<=1.1e-16,fraction,Fig.2a; §II-B,F2a_alpha_slider.csv,α=1.00 时 |shrink| 上界，三年
+alpha_020,-0.292,fraction,Fig.2a,F2a_alpha_slider.csv,2024 中位；与 S1 逐位一致
+floorbin_exact,"5,004 (14.8%)",farm-days,Fig.2b; §IV-B,F2b_floorbin.csv,"floor_bind=1 时 shrink=tax=0，精确到 1e-15；占 33,831 场站-日的 14.8%"
+penalty_wind,221.1 -> 2.3,MWh/farm-day,Fig.3b; §V,F3b_penalty_mwh.csv,−98.9%
+penalty_solar,629.2 -> 2.1,MWh/farm-day,Fig.3b; §V,F3b_penalty_mwh.csv,−99.7%
+mw_interval,"[0.2Cap, Cap]",MW,§III-B,S3_mw_bridge.csv,地板口径下分数不可逆；93.9% 的场站-日落在此区间内
+mw_median,8.92,MW,§III-B,S3_mw_bridge.csv:median_rmse_MW,RMSE 中位，占容量 10.1%
+gap_caliber,20.75,points,§I ¶2 (motivation only),01_data/caliber_3y.csv,2024 acc_prov − acc_station；**不是贡献**
+off_visible,0.20%,share,§I ¶2 (motivation only),01_data/caliber_3y.csv,2024；9 格均值 0.51%

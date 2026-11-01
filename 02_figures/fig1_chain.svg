@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="7.16in" height="3.87in" viewBox="0 0 1000 540"
+     shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5"
+            markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#4b5563"/>
+    </marker>
+    <marker id="arrowRed" viewBox="0 0 10 10" refX="9" refY="5"
+            markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#c8553d"/>
+    </marker>
+
+    <style>
+      .band       { fill: #f7f9fb; }
+      .bandPlant  { fill: #f4f9fc; }
+      .bandSystem { fill: #fdf8f1; }
+      .boxPhys    { fill: #ffffff; stroke: #24425f; stroke-width: 1.4; }
+      .boxPlant   { fill: #eaf2f8; stroke: #2f6b9a; stroke-width: 1.6; }
+      .boxSystem  { fill: #fdf1e3; stroke: #c47b2b; stroke-width: 1.6; }
+      .boxError   { fill: #f3f4f6; stroke: #6b7280; stroke-width: 1.4; }
+      .boxLever   { fill: #fff7ed; stroke: #c8553d; stroke-width: 1.5;
+                    stroke-dasharray: 6 4; }
+      .title      { fill: #0f2740; font-family: 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif;
+                    font-size: 15.5px; font-weight: bold; text-anchor: middle; }
+      .body       { fill: #1f2937; font-family: 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif;
+                    font-size: 15px; text-anchor: middle; }
+      .formula    { fill: #1f2937; font-family: 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif;
+                    font-size: 14px; }
+      .note       { fill: #6b7280; font-family: 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif;
+                    font-size: 13px; letter-spacing: 1.2px; }
+      .tagText    { fill: #ffffff; font-family: 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif;
+                    font-size: 11.5px; text-anchor: middle; }
+      .feedback   { fill: #b23a2a; font-family: 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif;
+                    font-size: 11.5px; }
+      .flow       { fill: none; stroke: #4b5563; stroke-width: 1.8;
+                    stroke-linecap: round; stroke-linejoin: round; }
+      .flowRed    { fill: none; stroke: #c8553d; stroke-width: 1.8;
+                    stroke-linecap: round; stroke-linejoin: round;
+                    stroke-dasharray: 6 4; }
+    </style>
+  </defs>
+
+  <!-- ==================== backgrounds ==================== -->
+  <rect class="band" x="10" y="42" width="980" height="142" rx="12"/>
+  <rect class="bandPlant" x="215" y="258" width="770" height="155" rx="12"/>
+  <rect class="bandSystem" x="215" y="422" width="770" height="92" rx="12"/>
+
+  <!-- ==================== section labels ==================== -->
+  <text class="note" x="20" y="32">PHYSICAL / OPERATIONAL CHAIN</text>
+  <text class="note" x="20" y="236">REGULATORY</text>
+  <text class="note" x="20" y="252">FUNCTIONALS</text>
+
+  <!-- ==================== physical chain ==================== -->
+  <rect class="boxPhys" x="25" y="55" width="135" height="58" rx="8"/>
+  <text class="body" x="92.5" y="78">numerical</text>
+  <text class="body" x="92.5" y="99">weather</text>
+
+  <rect class="boxPhys" x="25" y="125" width="135" height="58" rx="8"/>
+  <text class="body" x="92.5" y="148">plant</text>
+  <text class="body" x="92.5" y="169">SCADA</text>
+
+  <rect class="boxPhys" x="205" y="68" width="170" height="88" rx="8"/>
+  <text class="body" x="290" y="96">day-ahead</text>
+  <text class="body" x="290" y="117">forecast</text>
+  <text class="formula" x="290" y="140" text-anchor="middle"
+        font-style="italic">P_ref</text>
+
+  <rect class="boxPhys" x="410" y="68" width="160" height="88" rx="8"/>
+  <text class="body" x="490" y="106">day-ahead</text>
+  <text class="body" x="490" y="127">schedule</text>
+
+  <rect class="boxPhys" x="605" y="68" width="160" height="88" rx="8"/>
+  <text class="body" x="685" y="118">dispatch</text>
+
+  <rect class="boxPhys" x="800" y="68" width="175" height="88" rx="8"/>
+  <text class="body" x="887.5" y="96">realised output</text>
+  <text class="formula" x="887.5" y="119" text-anchor="middle"
+        font-style="italic">P_meas</text>
+  <text class="note" x="887.5" y="140" text-anchor="middle"
+        letter-spacing="0.6">metered</text>
+
+  <path class="flow" d="M160 84 C 180 84 185 104 203 106"
+        marker-end="url(#arrow)"/>
+  <path class="flow" d="M160 154 C 180 154 185 126 203 122"
+        marker-end="url(#arrow)"/>
+  <path class="flow" d="M375 112 H410" marker-end="url(#arrow)"/>
+  <path class="flow" d="M570 112 H605" marker-end="url(#arrow)"/>
+  <path class="flow" d="M765 112 H800" marker-end="url(#arrow)"/>
+
+  <!-- ==================== common error ==================== -->
+  <rect class="boxError" x="25" y="300" width="165" height="78" rx="8"/>
+  <text class="body" x="107.5" y="325">forecast error</text>
+  <text class="formula" x="107.5" y="350" text-anchor="middle"
+        font-size="13">e_t = P_meas − P_ref</text>
+
+  <!-- ==================== plant-level settlement ==================== -->
+  <rect class="boxPlant" x="235" y="270" width="235" height="88" rx="8"/>
+  <text class="title" x="352.5" y="296">plant score</text>
+  <text class="formula" x="245" y="322">R_t = 100 (1 −</text>
+  <text class="formula" x="245" y="344">RMS(e_t / d_t))</text>
+
+  <rect class="boxLever" x="235" y="368" width="235" height="34" rx="7"/>
+  <text class="formula" x="245" y="390" fill="#9a3412">d_t = max(p_t, αC)</text>
+  <rect x="392" y="374" width="72" height="20" rx="10" fill="#c8553d"/>
+  <text class="tagText" x="428" y="388">1 denominator</text>
+
+  <rect class="boxPlant" x="510" y="270" width="200" height="88" rx="8"/>
+  <text class="title" x="610" y="296" font-size="15.5">settlement penalty</text>
+  <text class="formula" x="520" y="322">π_t = κ C max(0,</text>
+  <text class="formula" x="520" y="344">θ − R_t)</text>
+  <rect x="690" y="276" width="20" height="20" rx="10" fill="#6b7280"/>
+  <text class="tagText" x="700" y="290" font-size="12">θ</text>
+
+  <rect class="boxPlant" x="745" y="270" width="235" height="88" rx="8"/>
+  <text class="title" x="862.5" y="296" font-size="15.5">settlement outcome</text>
+  <text class="body" x="862.5" y="322">assessed energy</text>
+  <text class="body" x="862.5" y="344">paid by the plant</text>
+
+  <path class="flow" d="M190 330 H202 C 206 320 214 320 218 330 H233"
+        marker-end="url(#arrow)"/>
+  <path class="flow" d="M470 314 H508" marker-end="url(#arrow)"/>
+  <path class="flow" d="M710 314 H743" marker-end="url(#arrow)"/>
+
+  <!-- ==================== province-level assessment ==================== -->
+  <rect class="boxSystem" x="235" y="430" width="235" height="80" rx="8"/>
+  <text class="title" x="352.5" y="456" font-size="15.5">sum over plants</text>
+  <text class="formula" x="352.5" y="482" text-anchor="middle"
+        font-size="15">Σ_i e_i,t</text>
+  <rect x="392" y="416" width="76" height="18" rx="9" fill="#c47b2b"/>
+  <text class="tagText" x="430" y="429" font-size="11">2 aggregation</text>
+
+  <rect class="boxSystem" x="510" y="430" width="200" height="80" rx="8"/>
+  <text class="title" x="610" y="456" font-size="15.5">provincial score</text>
+  <text class="formula" x="520" y="478" font-size="13">R_prov = 100 (1 −</text>
+  <text class="formula" x="520" y="496" font-size="13">RMS(Σe / D_t))</text>
+
+  <rect class="boxSystem" x="745" y="430" width="235" height="80" rx="8"/>
+  <text class="title" x="862.5" y="456" font-size="15.5">contract target</text>
+  <text class="body" x="862.5" y="482">aggregate assessment</text>
+
+  <path class="flow" d="M190 350 H205 V470 H233" marker-end="url(#arrow)"/>
+  <path class="flow" d="M470 470 H508" marker-end="url(#arrow)"/>
+  <path class="flow" d="M710 470 H743" marker-end="url(#arrow)"/>
+
+  <!-- ==================== key feedback ==================== -->
+  <path class="flowRed" d="M887 156 V195 H210 V385 H233"
+        marker-end="url(#arrowRed)"/>
+  <text class="feedback" x="222" y="211">denominator depends on realised output</text>
+
+  <!-- ==================== design choices ==================== -->
+  <text class="note" x="20" y="532" letter-spacing="0.4">Design choices:
+    denominator d_t (1) · aggregation (2) · threshold θ (3)</text>
+
+</svg>

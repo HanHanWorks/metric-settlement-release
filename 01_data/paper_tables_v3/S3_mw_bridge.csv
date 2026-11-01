@@ -1,0 +1,4 @@
+﻿year,n_farmdays,share_rmse_inside_interval,median_interval_width_MW,median_rmse_MW,median_rmse_over_cap
+2023,10624,0.921,19.43,7.06,0.0955
+2024,15191,0.935,23.57,8.92,0.1014
+2025,8016,0.954,25.86,9.78,0.1146

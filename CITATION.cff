@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "If you use this code or derived data, please cite the manuscript and this archive."
+title: "Who bears the cost of forecast error? code and data release"
+type: software
+authors:
+  - family-names: Huang
+    given-names: Zihao
+    affiliation: "Guangxi Key Laboratory of Digital Infrastructure, Guangxi Zhuang Autonomous Region Information Center; School of Computer and Electronic Information, Guangxi University"
+  - family-names: Chen
+    given-names: Yan
+    affiliation: "Guangxi Key Laboratory of Digital Infrastructure, Guangxi Zhuang Autonomous Region Information Center; School of Computer and Electronic Information, Guangxi University"
+repository-code: "https://github.com/HanHanWorks/metric-settlement-release"
+license: MIT
+version: "1.0.0"
+date-released: "2026-11-01"
