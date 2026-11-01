@@ -1,5 +1,7 @@
 # Data availability
 
+The archive is published at https://doi.org/10.5281/zenodo.23850206.
+
 ## Released in this archive
 
 - Analysis code: `01_data/build_paper_tables.py`,

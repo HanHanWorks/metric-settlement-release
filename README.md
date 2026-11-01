@@ -1,5 +1,7 @@
 # Who bears the cost of forecast error? — code and data release
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23850206.svg)](https://doi.org/10.5281/zenodo.23850206)
+
 Code and derived data release for the manuscript:
 
 > Zihao Huang, Yan Chen. *Who bears the cost of forecast error? Performance
@@ -68,8 +70,8 @@ Code: MIT (`LICENSE`). Derived tables and figures: CC BY 4.0
 
 ## Citation
 
-Please cite the manuscript and this archive. A Zenodo DOI will be added when
-the archive is published.
+Please cite the manuscript and this archive. The archive is archived at
+https://doi.org/10.5281/zenodo.23850206.
 
 ## Contact
 
